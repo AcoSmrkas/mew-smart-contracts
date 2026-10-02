@@ -1,0 +1,136 @@
+{
+	"contracts": [
+		{
+			"name": "Mart · Sell",
+			"status": "live",
+			"source": "contracts/mart/sell.es",
+			"treeVersion": 1,
+			"address": "2DnYaspUNUtsGfFELT8Bhvn1pGGmPsrgnz2WmbyLokDL7zSRQALQctRtqXwYiY9r2N5ei7kUQhHQjLgzVVtfkPKRtm5aDBryFjadJTP51N8UFsaEWMwKGi4yood3ANENsUG5pG6yqz7iiFta812t22vJvguQPqXA1tJVCTtmXwb3NHrERr5RvHK1oAEQvxoidzCtiBt7FoZ3UpdasSExhSSfMKoMhrrrBmsohLDmZA9iKLySGMT2kYfVyoXFx54DwYxh7WfCJqzZgR4cwdzqZ2avWVNc9DRb5VdV5CwuKyavWKkGrTonPvYQsu6ZcTU5NHVnShiwAyPXjXJNdBnfkh75orCH21TFxqoryKYiokmR9Z329BP9cJ6PZCLsxSp7ZxVs2CdKYYrG3MMBbdXBUYk5JHNN2CsoBYP3EUMDx9kJghHs3eBVA7yH6g2TuTZEgFJqm5zrxj5GtyiMG64fNh1uBNTrvVdpnfwhuDHnbEcrDGDLwQ6fratQfB67sWer3ixzxtdWw2iP5UN2whM1tPwYu594tUDoVRZVimcopXcgXngzeTiR9GQ24WdugUsSLZMyxKv"
+		},
+		{
+			"name": "Mart · Escrow sell",
+			"status": "live",
+			"source": "contracts/mart/escrow-sell.es",
+			"treeVersion": 1,
+			"address": "CqjJEtjMcqQhymSxgjbjkBpA9jSDXFj1EbTvLhmzKvHnavd47SXmaWekznyCvF4B2TpwJMQs9mh3BRJ4Wi6qnKbmn4EGPfEu5FsnnjWteFXLC5ZSAWwuSpYVQE3KAsAErd4TCSHastkMZi72hYmY2UZniw3UJ6KVpcFMtNLiBZFTM7YEfpcgTWgyuovjGau7Azyi7bX6fS2vpVFsyhdFy4mTqgLdcVZYf3Pm2KpXWc8zq6Hx9piRcgRwuBCAq42Xvu1NfqwZDJmmZNLew4MKxn1NjYkTENrYwXL9eS98cGSVYrfYmnSQ5Kt9uFPJfCzLc1FQGLEp2iyk8AdGBu5FcYg9BNERybdfmQeKMKBj6pm1u6GhmtW3iacqAXYFmJATjd9Z2f32HHou4x4wwjCjfJsxRdzcht5x6EdhkEsuhoyaByJXkG1jgMLzehe16bDS4geHpAQRrU72Yq2wHyLcX1SgobNEGZzhwTRnk5ic229QAGSa9wonrMEsZwvxyXjtgY7YHPWzM5km8AxR7Yqq7nx6aRa6rM7fdemELZ9pZG41JnCBTz61NCvwGB2xN5evsntvqndhyYtV5Pbp"
+		},
+		{
+			"name": "Mart · Offer",
+			"status": "live",
+			"source": "contracts/mart/offer.es",
+			"treeVersion": 1,
+			"address": "Qn2EsTdde6bMH91AoCaTV2dLbxBbepqZpZurA17XNZSF8nNLMF9cWxJQ6uD9o7D3S94dLRhHYJ8F4JESkGHBxmfsoVfekSQZcCiCNSyh2UDUo7BATjinvh4roWqH8nLZmCPdMaucLjXFo5TX4Y6QVNkogmXmBmbxZ2T5heAWKkSnCd3i9oZRjGmByoQBP2dKJG4SvMhtVJ7x2aRiYzjW2oALqKZ7YGukJHy61FanVsE7ZYSXamzv37chXwtUm39kD287kHStcdg4QuNHWHmbtQF4zJF5VoJ7jzVBXpNCR7cVDwMSqMSTDzRRD4Mmf3ZvAV1EMUXpcXCfY9Pi9PE1KBXGYoJoU37aqS9YEeztdcdm9mpuj3AweLBT3eTLEaytyW1EkQ6ayFCup4DP5Czf3joZt7XwAa5uXnuENMLSkhfMFydeTfsAAHzi7bH5aEytrwsVdGtdyUYX7cExfVDnBGmnzwQtsDKgRW4pjMY5FXn6EiGFDUd6DJXvdwD6fdWwjz4yZHqj1pgaNq5RqD1oMakpeyui9RXsoDdgynddBmHjKWvjc2dHfD2VyzdeXM8Gm9CsmcDM1"
+		},
+		{
+			"name": "Mart · Escrow offer",
+			"status": "live",
+			"source": "contracts/mart/escrow-offer.es",
+			"treeVersion": 1,
+			"address": "4yfhLyYtvMW6AaafPT5vqXTaDXDRRG9S8zcE35DQNqWxjW9ZY938RadqRAtzo1VRPhSHJLNxUq6VkpM3Mx3jWRkiHqqw6rr1HCghXN4ZSSa3odxyyhpeWAinEgFf2QZy2Zz5NpheBEjHZbgw3grFxxS1CJ4T6hgt2ngJTVsiwbr2BCY5DbGYdY6u9VHqvHkjJN25RgADQMWVKph9XuNd2y95zJRpoxKjLqC8szx2pi5dgioc51U4doVDiFbs6T9wmsjvvyTmkLQ1QYYgz61VPhFKsMYEXBBowNqx3k25Gum9iktkUMZoWV2LqG8hwG8LmBbaMqbpu6DCVx45fetkVd7MqdomCDsNpPFCi7YbKycwKUvqiPjDj9yp2A9Xxi9qWSN3Fg9HMxvjKExsi4CqWdQN8TG8QrrSxbj5ARPkthJbcu5nMg2kRwRc323Uem66d7ws4oPGgjLXQr1htDuzruotzAcFp3R6QpAdeQRKVrbXQcPN7LzAAKYRz3hzZi44eZrk8Pua3etbsuatArx61tYkMNftVjiJUNUzB3DL1PpMjCukv8W52qtPC5BdffEpWbCxwEgAXUZdXBCrogy"
+		},
+		{
+			"name": "Mart · Partial fill V3",
+			"status": "live",
+			"source": "contracts/mart/partial-fill-v3.es",
+			"treeVersion": 1,
+			"segregateConstants": false,
+			"address": "PxjYkwKG93sFFjkeTJGanPqCd5gFSC2hGpPLwUnFuh2iCnrTaNseSCgjqAWHs6ciZx2sFaqbzEABNXAuLxqkkw8T26W7qp9KGdRKD8BRzCiwmFC8XdMBvjcgYjVemg2jT6WSTyJMFR2YjezChfAirmAy13QMitR2LfhFSDTJqRWWrCBrAw3P9n9pVdCcJEEV3Szxs1cmmALLmqkqbQkhcbZ2KZ5QczjR2WeUQ5m3STKe63tFB9QUJKbmvQUn19pcJerfuZecs4cMTsRL63yqH6hKEBDrKyopShHTV1uCzag6m7TJNCAuKLu5XVMaYqfQ3veyq5nKZDpWLpkWhw3ELv9UMVTd9xVbwQk3ZmHybrb2tG5SkYhgzrambNAVCjbTEZZUGonG6f9wcsgN3HP3B3yjumvH7htjyhSHvwu9ppyWxjcPZb3V6XHwzry4oCJdFBqveEUPpoLqXbfLh3nnR5jkJeHnxCcbRP2jpfgaqoVgCwkFbd5K8o1aUyAGYouX9wWTwExctQSkMYTa4Td9kXFuMjwm6TxStCFJEC4SNCUxkd7trhR5KPM8JoCDsQyMv8Dgw1JjxARwZGLd8wFNM3kiedV5ScbiNNce9JRAcdzCbsAvuuWWVFcTh924upAW6s3yxGGXKB9oP36o6w8bFT2SAHbKRTatsKoGASoLHrJVrc49SRf9xSBMiJGh459RzaobwzW35mpqyRv3vxVZFZNaEjie1YQVSVCfyWAYH5PXvSmgNkuXHjxWVpG7Stpw6czWutZeScQYbLSTeFuyahdQAqGX1Qvh9mcZoBK61yrfTw46DZghpwrpiVDJkdqsCWWG825JsusC5cpk9ZSkg7kPgHcZ5kTgUZbwcQHSMSoGmbYUPqbLLp6hCjj8Fz7EEgC1JM9ed2SZt4Gqfe65KGMt5AbVZXz5YeUrsdxH8XpcbTrf75S1xYJ"
+		},
+		{
+			"name": "Lend",
+			"status": "live",
+			"source": "contracts/lend/lend.es",
+			"treeVersion": 1,
+			"address": "4vLjuLN1nYeFT6oWQbom1puQu6SW3nPCTPdVJSQUmePJwDrqAUjrQ1bRyu42Qujv3dbhdJgh1kK2qHhedEtJkBaUaHd8xvkXq4es3GD4TGtL67NznLtbPp9urVJVJnTfFCqXbfAudGhJZmJ1ofS2LPUWL395xNi3gKcuU5yjUSuHuZqVfaS99rFEwtBSQqQ1rgahdpdFubPDKLLgrEMo58D9WwmU3dNrD9GVRM4BMV8CGBrhTb5stuRgWAAKLR9eHtzWU5RRXcGMPbhx2X6bPj6XFXki8oV2JsAcQmZJukw5VPNLavfuNmckWFhAK3FQBPcb7ty4iXgxezVogk48cFXo7kAxhms6mCMf3E3zeYTAaGvMBFQduH2dbiGro3LmHYXmKNcEuDcD14ZGLVH8hVarSGxuHrmZBVW6uFAbsanB9bD74Ls6VbFmVb2so6WhBxpnKpHP8tZ5XApbp1781F9Dt3WBvhPTgraB9yLnWJESYRcMU2PmUNxCYDJdNPFDWhPqdw62V4R8MmH2UAp2oQrpMmmcNgsQ5ajbWZrgYY7NHu2ATGEi3YDcBg5r482rMmfoYXFPE5EAPFpSYBGtWb7im92hxdDRjKsoGNKXjUuppY4xyTYr1JgrccCRsYE7y295qiXWQCkcnbbjprRifxXzffsCcGyLea96JoJzTtLxefYyrpYoWEZ4L63ti2Yjy9dghuZedQgemsBHuXpLtee9dj7SavScNMfPya3yMWpEVG5PrzrUiWE8SDYzj2GTrsHnxSPyfSZwp1o4czXtrp7LZYR9Es2Pzgc2ZBFn64XvqzTbzhH7cYii9oCLgg6agZ8g8Ps1kod7gjD6CB3REvYEkiZH71jFYiGkctkZNwrskP4GKuxCYvX31uzhHP75pCvhEc1U6SFa2bF8PjKW6Nitd37L1FGhBYB8XkBS1LMvz8BxuPCQ6eZLsyQVS4cCF"
+		},
+		{
+			"name": "Mew Lock",
+			"status": "live",
+			"source": "contracts/mew-lock/lock.es",
+			"treeVersion": 1,
+			"address": "5adWKCNFaCzfHxRxzoFvAS7khVsqXqvKV6cejDimUXDUWJNJFhRaTmT65PRUPv2fGeXJQ2Yp9GqpiQayHqMRkySDMnWW7X3tBsjgwgTHyYBiqpnziCu8e2Fy9r9PCavASWuiFsfooJJbGSZFDdSLPLEgFWLKrFq1kksUhkKXWuhciQMP5W5akMYAWs4r5dPcaT8JhaaubtHtdKMgy6tZ3x9JRYdDbt9hSYq5Bg7vaBYqQTDcyTHJ6aXudhbnfbxJAbXzqjqqBkHhTt2wBBXXJzZKk7WN321fiL3kJQBrxPjk53u4aujWSAxJshKpHsNZdqqtif6AoLo81zWrQfPP6aBLu889zEbeMfL7RwbnMDE4K7mqX1wcv2N3Tw76tTm7MeXLVPs8Y9rATNVT5e2Em11L5JuPeJBZG6MNXJnWbtEWyc6PYji1C5JdYQjgzme6gZFpckU1NkiwtCUb8iMJXfx6NcMQnLNqLm8qcfR3uamQBmwEF3DXaTTvQD7opvtKxQJmdpDHKY6rZizwWk7uEWXWf946aSxPk7uv4jTnHod1rio5vuYACToJzmQLGYFA8SkjTtqED8wqyBfvFr63iu1CGtvMCi5E3SfMzjMYx7CstFgUeFMFKPAMLn3X8DGtc5H23JCVnAkwFrwzwXxC2NWzdsBbB4JVkBD783U6WNLPzhCykoP1QZBnc8nHiJpLzDpJuhwZp8DStumjMKRfEtNHp3QiUGW9tc94P49cLLu8VddmmMMwaZ769XSUTpcNi75sJRFUtHwKvyN4af7wjfmhCSkkReiUmb2ZmpJvw4FNs8An3xJSgEM5NX3zfz7Mr8PbtVfYjj35MiNSeEzRUKQH4qDpJX2R"
+		},
+		{
+			"name": "MEOW staking",
+			"status": "live",
+			"source": "contracts/meow-staking/stake.es",
+			"treeVersion": 1,
+			"address": "2Czxg7U54ZzDcguzu4zt6SEfu9oUm4t5MH7Qsdt5pmVrbqqR9U1hwxSdpnzJ2Vo9EnSNtvVyYmcTzQWFtSVa8zh4Cp"
+		},
+		{
+			"name": "Lottery · Prize redeem",
+			"status": "live",
+			"source": "contracts/lottery/prize-redeem.es",
+			"treeVersion": 1,
+			"address": "k8sGMfL3LjdnQpCat9jyThDJZ3aEniCD9y65779oEjV9375QFXHXUke3aQKRgZtGKgY5zp"
+		},
+		{
+			"name": "Burn · Programmatic burn",
+			"status": "live",
+			"source": "contracts/burn/programmatic-burn.es",
+			"treeVersion": 1,
+			"address": "PBpxE4RE7t6CYH7HFeETc"
+		},
+		{
+			"name": "Lithos Lock · Season 1 campaign + position",
+			"kind": "lithos-campaign",
+			"status": "live",
+			"deployment": "contracts/lithos-lock/deployments/season-1.json"
+		},
+		{
+			"name": "Lithos Lock · mainnet test campaign (v2)",
+			"kind": "lithos-campaign",
+			"status": "retired",
+			"deployment": "contracts/lithos-lock/deployments/mainnet-test.json"
+		},
+		{
+			"name": "Mart · Sell",
+			"status": "legacy",
+			"source": "legacy/mart/sell.es",
+			"treeVersion": 1,
+			"address": "2DnYaspUNUtsGfFELT8Bhvn1pGGE3nuHxyzxdDML4P31NgVPYZYwG2tsXJLsAWEvZRcKyBYXc6kUuoUpYVPHRpMQen36R2hFx4pBF6DmbeKWbXExsbXxyNaiQre58GUfwB2qktmaHETbgSSX64H2zFvCpPnLD8nPWAivN9zidxuWJyu1o8MxLf88bzJRBj8P3x75Qrd65KbfcWvFF9trYu6CyFc8M81DZ9GbPJVTNjvC9gdaRvkFBEWL8fM4xFTjZru3UT7NkbPy27RJwxgMNun7NQw3bhz3L5AGre4RXo8Ur4m3fJZjXK3GLUAGcTmV4VvjwF7WR3DDK2wiZGZnuWfkg8rXoyNBNf5NRe2FjoPWFU21R44ujLbnvsYRPZ5y24XzraKpLrYUhNDnMKHPqFo9CB6He8BnFWQzqQWJdWqYmdNgwbFC3yTuoyn1bNieRKPf2hXPMzQonRTcJBHLPXqgjhP39tbbc7fD83uDCxkyaT6TJzroCy7MU5TW159cDryPJQXwcbEir6EuACnqxs7e1BPzhFgDEdb3yw7m7rhvxYwcyk3mEamAdUJHxnnvi7M3uw8"
+		},
+		{
+			"name": "Mart · Escrow sell",
+			"status": "legacy",
+			"source": "legacy/mart/escrow-sell.es",
+			"treeVersion": 1,
+			"address": "CqjJEtjMcqQhymSxgjbjkBpA9jLyRYmdCUDx7krYBCAeASqJE56im7pdxjsjQkDfb33rCtYvB64wFZiFT3yMDc7xQSfR1c9JJi2ePVqn8d2skSL3AGM8wusrMd23q9WHACHfjye3RiaPLrRFEwDp8u8E3QFM2KsxLn5LNmnTCPy8rfX47DVqZYpbK5462rbnRLdyjWSR3G6Sc6cJUWSBEnpmcBkDZjyNkwpDEBZ97rBswT5HZU4ryTJP4x2wtsqUP3teJM9Ru2GWmx2UZynmiJF8mEeED8ZGH6AHjCf2EjTnigtSvxeaR3JyzmANWWQTKAb9dfpH8FxdhUEgF9kCMbGLWXe5sDw7xDZxAsqEsQFk1dovru48dMcyGapFahDprdCeLeBcGsqx1LkL5oEtGQUdGwDam7PRyq1A6YfWDCoF4g6vGWHzxdYy7zNtBrCaC2YcouKSrDmjiSrqL8wTcrxoEmnneLhue1XJH8NqE3qx9N89NA5MaZZjdkr58memPmH2i4zPpsSsR32kZr7zvCfEn6QnXed9P1HSc5uHV9kuW5QJpSfsRRwHykLXDLsxpJ9JVYaW2v8xo9Gh"
+		},
+		{
+			"name": "Mart · Offer",
+			"status": "legacy",
+			"source": "legacy/mart/offer.es",
+			"treeVersion": 1,
+			"address": "Qn2EsTdde6bMH91AoCaTV2dLbxBbepqZpZurA17XNZSF8nNLMF9cWxJQ6sDf9pNpeXiQ8T4Ay2G5xCiiz7u8CVNvJrxBSwpUDwPff3N2KJM1Bokazqqn2pVKNDbdRLc76L599kQxEBqGNcVeG9yMUGVLBeJNZyHsCRnCACKj9CPsGW63mtgUdzNTnLUhNYQETir8auYF2aQuAqzSGfFUuqqg89uXZBcXt4XVe49aoydo1ffjAmPH6g6NdErjB7FNmKEx3dxGGtgJSbniC1znoY2uvpyEZVorCobdQ9hy6uQG8Ho3VXftn324VdeLYi9jd23XuUKCsT4YPaVG6naH7N1WRuMMxyC3sRkX3qqp3DNgcGh1oxrUm9BGjJrTw2G3b9j4QV9XrXBPdNJAuzU5BVw5jwNLyGWsCp8Ap6666YDRX95wSxrwftZjo6PyfYHNra6D6LwtPKGJM2L5b5k1afidudtFjyJhnHyu5JgjX7JNV72QXhYM2TfngV77zGu6Pr8kSHutgJHFAU8jbVv9DPVSyLEXsUKvWYvHVB2BNVi7THmyeZnmsoXUv87fWLKpFDjmQeqFg"
+		},
+		{
+			"name": "Mart · Escrow offer",
+			"status": "legacy",
+			"source": "legacy/mart/escrow-offer.es",
+			"treeVersion": 1,
+			"address": "4yfhLyYtvMW6AaafPT5vqXTaDXDRRG9S8zcE35DQNqWxjW9ZY938RadqRAZgMnJ2YdH2YLYV5UKoM8CyBJwCEK4jJq9arLXUKpySuvPBiur4Z6RiFZfPsxomXTJSif8xGNTdcR4CwHjFuVEAd7dMsjfaE44q24TgcRpVgcLScWGU9RNd6diFdYGXTUCdzvWKQkyrqMVCSmSkX2Rda7RVZyW9mK4fcbQiQUhspfsQihR7KUTSGms9WA96Zju1obeHue2wXgPf7kaBDZnbHgacEj7X3Gko6UTvjQHvtr3psWutF1TirS9NbwJYbRfceFqrY49ZTwaN48CdNEfxKPUJN4TUKHcjThcXFuJRjhyDMyVv54pQvnowJCoZzbdGu5KcYLXpLKQEJCytcrbtV5aCfbbahYbmqY2bsj1tdZXNeGyuySBsVfcmxW4g1dCtNqYsyXRHajGPd13cfGLtjEqtg6vkQEdzfSpuc3sVVmcmWEw6xeG9hYNyaqvyhgaaQEd7Z4uvibWgqD4pmrY2BB7yirZRAdn9ikL1xXEvD1WmCS3vMWbHUDKVdKnYxPFAGkHVHuJUt8F8z9WVtp1ep8U"
+		},
+		{
+			"name": "Lend",
+			"status": "legacy",
+			"source": "legacy/lend/lend.es",
+			"treeVersion": 1,
+			"address": "4vLjuLN1nYeFT6oWQbom1puQu6SW3nPCTPdVJSQUmePJwDrqAUjrQ1bRxT2GdYt7DwAeF5RZ52DnkCBHt631pEhBhS1BGXoAKEUTP5baxqsQWfonUPupk5EL8yCDsrUKPBo2oUuU2BSEZLtV72tvAZTLqR7vBAFwDvsQRRWbNfRi8yhQFepAWWks1p5xgpYUPRymwksB7cktMXXGkSt1QGb4wbhuqmVWEv2VzQtoz2QMDj4hpXk98SYK6pG5F6iofXiJJaYQz79U8P9e7piXRvc8HHK1NyV8ZBZfBm4ZrNZyg159gtmthNj1ptm9RqkcNVT24K7rU1mgPmicECKXTdY1CmZZW29tZJuwKXni9h93BQghEun4b63YSZqKDK1H1s5cjgWKBSotnswyxN5jqPWm7X2xdGZz4HuNdJttxWA7PegEzseeAC4SktPqUJ7UvkqA5iHYAR9qAnrawFZUjW1BZkzvTDd9y27X3uJxdSJFjqWzhGkGW5m87Gw3oufYBcvK1UzBdbAoC3duks3ooFq3BgisEbMV1N9WnjtRvxUvmsiHRD2Z4g8Px7Eu9hm6VnqzATT2oLnQBPZvAbQwo8rFV5wqCn4tcyxr1KjGMGwYHzVBFwfuBFnThkt2vQSUAmJFy9kzLxeFZDJQhWYXUPVekLqpKwts44moQe5f8B87734PVbZSdrC1h6pww6wUASp4GHUAegtWePytKFo8GC3q7Bkvev6nrvpU5PPSmEJ4H7b4QZNMkw7e6dZ4CHAVBn4KNc5HN9CcTjeP5B96JAfKuyBzmvhTEThxes9hN382YAMv8t9tQs9wE6o6Gccif3DmAVYjJMT7Rtbyz1aQkVsB5woqVWDXwgBuKC7T6gNe26aFTGud4Db1eQUKvsLQ7yU2GTJ5Bsdv5ja29d1S5Kx9yYcGrLVkyyjZJCSPFCCfY3Efz7MBc5u2vQri1vUWo"
+		},
+		{
+			"name": "Mew Lock",
+			"status": "legacy",
+			"source": "legacy/mew-lock/lock.es",
+			"treeVersion": 1,
+			"address": "5adWKCNFaCzfHxRxzoFvAS7khVsqXqvKV6cejDimUXDUWJNJFhRaTmT65PRUPv2fGeXJQ2Yp9GqpiQayHqMRkySDMnWW7X3tBsjgwgT11pa1NuJ3cxf4Xvxo81Vt4HmY3KCxkg1aptVZdCSDA7ASiYE6hRgN5XnyPsaAY2Xc7FUoWN1ndQRA7Km7rjcxr3NHFPirZvTbZfB298EYwDfEvrZmSZhU2FGpMUbmVpdQSbooh8dGMjCf4mXrP2N4FSkDaNVZZPcEPyDr4WM1WHrVtNAEAoWJUTXQKeLEj6srAsPw7PpXgKa74n3Xc7qiXEr2Tut7jJkFLeNqLouQN13kRwyyADQ5aXTCBuhqsucQvyqEEEk7ekPRnqk4LzRyVqCVsRZ7Y5Kk1r1jZjPeXSUCTQGnL1pdFfuJ1SfaYkbgebjnJT2KJWVRamQjztvrhwarcVHDXbUKNawznfJtPVm7abUv81mro23AKhhkPXkAweZ4jXdKwQxjiAqCCBNBMNDXk66AhdKCbK5jFqnZWPwKm6eZ1BXjr9Au8sjhi4HKhrxZWbvr4yi9bBFFKbzhhQm9dVcMpCB3S5Yj2m6XaHaivHN1DFCPBo6nQRV9sBMYZrP3tbCtgKgiTLZWLNNPLFPWhmoR1DABBGnVe5GYNwTxJZY2Mc2u8KZQC4pLqkHJmdq2hHSfaxzK77QXtzyyk59z4EBjyMWeVCtrcDg2jZBepPhoT6i5xUAkzBzhGK3SFor2v44yahHZiHNPj5W3LEU9mFCdiPwNCVd9S2a5MNZJHBukWKVjVF4s5bhXkCzW2MbXjAH1cue4APHYvobkPpn2zd9vnwLow8abjAdLBmTz2idAWchsavdU"
+		},
+		{
+			"name": "MEW staking",
+			"status": "legacy",
+			"source": "legacy/meow-staking/mew-stake.es",
+			"treeVersion": 1,
+			"address": "2Czxg7U54ZyGMzjt35EYX9g98H9UjFqteuYWX5CSgGCYWAjg1ng2jgm4BHjA6u1Azeo7EYQsBMVLbhRreNASJu54ho"
+		}
+	]
+}

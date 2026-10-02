@@ -1,0 +1,19 @@
+{
+  "name": "mew-smart-contracts",
+  "private": true,
+  "type": "module",
+  "description": "ErgoScript sources of the Mew Finance contracts, with a script that proves each one compiles to what is on chain.",
+  "scripts": {
+    "verify": "node scripts/verify.mjs",
+    "verify:chain": "node scripts/verify.mjs --chain"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@fleet-sdk/compiler": "0.10.0",
+    "@fleet-sdk/core": "0.10.0",
+    "@fleet-sdk/crypto": "0.10.0",
+    "@fleet-sdk/serializer": "0.10.0"
+  }
+}
