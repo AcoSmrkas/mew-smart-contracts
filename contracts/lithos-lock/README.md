@@ -13,7 +13,8 @@ its funds. Every rule below is enforced by the contracts.
 
 | file | what |
 |---|---|
-| [`campaign.es`](campaign.es) | contract v3, one singleton box per campaign (Season 1) |
+| [`campaign.es`](campaign.es) | contract v4, one singleton box per campaign: what new campaigns get |
+| [`campaign-v3.es`](campaign-v3.es) | v3, Season 1; kept verbatim so it still recompiles |
 | [`position.es`](position.es) | one box per lock, shared by every campaign |
 | [`campaign-v2.es`](campaign-v2.es) | v2, the retired mainnet test; kept verbatim so it still recompiles |
 | [`deployments/`](deployments) | the pinned parameters, trees and token ids of each mainnet campaign |
@@ -41,6 +42,8 @@ It allows three spends:
     contract, and the NFT and the markers are burned.
   - The campaign must be `INPUTS(0)`, so one sweep handles one campaign.
   - The fee address must be a wallet (P2PK).
+
+From v4, every input other than the campaign box must be a plain wallet box, on every path.
 
 **Position box.** Its whole contract is `proveDlog(R4) && HEIGHT >= R5`: only
 the owner can spend it, and only once the unlock height is reached. It does no

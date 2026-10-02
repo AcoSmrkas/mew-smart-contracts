@@ -1,22 +1,11 @@
 {
-    // Lend v2: a lender offers a loan; a borrower takes it by locking collateral and
-    // paying the lending fee; the borrower repays before expiry to get the collateral
-    // back, or the lender takes the collateral after expiry. The lender can cancel an
-    // offer nobody took.
-    //
-    // Rules: every input other than this box must be a plain wallet (P2PK) box, so the
-    // repayment this box checks can't also be claimed by another contract in the same
-    // transaction; the fee split is computed in BigInt.
-    // The previous version is legacy/lend/lend-2026-06.es; the apps still serve its loans.
-    // Register and output layout are unchanged, so v1 transaction builders work as-is.
-    //
     // Register Layout:
-    // R4: GroupElement                lender
-    // R5: (Coll[Byte], Long)          (collateral token id, amount); empty id = ERG
-    // R6: (Coll[Byte], Long)          (loan token id, amount); empty id = ERG
-    // R7: (Int, (Long, Long))         (duration in blocks, (fee percent over 100000, lending fee in nanoERG))
-    // R8: Int                         state: 1 = offered, 2 = borrowed
-    // R9: GroupElement                borrower (set when borrowed)
+    // R4: (GroupElement) lender's public key
+    // R5: (Coll[Byte], Long) - (collateral token ID, required amount)
+    // R6: (Coll[Byte], Long) - (loan token ID, loan amount)
+    // R7: (Long, Int) - (fee percent, loan duration in blocks)
+    // R8: Long - lending fee in nanoERG
+    // R9: Int - state (1=created, 2=borrowed)
 
     val lender      = SELF.R4[GroupElement].get
     val lenderProp  = proveDlog(lender)
@@ -43,20 +32,19 @@
     val state           = SELF.R8[Int].get
 
     val feeDenom        = 100000L
-    val devFee: BigInt        = (lendingFee.toBigInt * feePercent.toBigInt) / feeDenom.toBigInt
-    val activationFee: BigInt = lendingFee.toBigInt - devFee
+    val devFee          = (lendingFee * feePercent) / feeDenom
+    val activationFee   = lendingFee - devFee
     val devProp         = PK("9hMRoSfXZJs83S2hLqxZZ8ivw1L8FFgSk7RJB7eq2qXyxU2paED")
 
     val creationHeight  = SELF.creationInfo._1
     val isExpired = HEIGHT > (creationHeight + duration)
 
-    // A P2PK ErgoTree is exactly 0x00 0x08 0xcd followed by a 33-byte public key.
-    val p2pkPrefix: Coll[Byte] = fromBase16("0008cd")
-    val onlyWalletInputs: Boolean = INPUTS.forall { (input: Box) =>
-        input.id == SELF.id || (
-            input.propositionBytes.size == 36 &&
-            input.propositionBytes.slice(0, 3) == p2pkPrefix
-        )
+    val thisScBoxes = INPUTS.filter { (input: Box) =>
+        input.propositionBytes == SELF.propositionBytes
+    }
+
+    val validSingleSc: Boolean = {
+        thisScBoxes.size == 1
     }
 
     // Helper to verify correct loan token repayment
@@ -130,12 +118,12 @@
             
             if (registersExist) {
             val correctActivationFeePayment = allOf(Coll(
-                (lenderBox.value.toBigInt >= activationFee),
+                (lenderBox.value >= activationFee),
                 (lenderBox.propositionBytes == lenderProp.propBytes)
             ))
             
             val correctDevFeePayment = allOf(Coll(
-                (devBox.value.toBigInt >= devFee),
+                (devBox.value >= devFee),
                 (devBox.propositionBytes == devProp.propBytes)
             ))
             
@@ -189,7 +177,7 @@
             val validLoanReturn = validateLoanRepayment(lenderBox)
             
             val repayConditions = allOf(Coll(
-                onlyWalletInputs,
+                validSingleSc,
                 validScBoxSpent,
                 (state == 2),
                 (!isExpired),
@@ -222,7 +210,7 @@
 
     // SigmaProp
     sigmaProp(allOf(Coll(
-            onlyWalletInputs,
+            validSingleSc,
             (lenderCancel || borrow || liquidate)
     ))) || repay
 }

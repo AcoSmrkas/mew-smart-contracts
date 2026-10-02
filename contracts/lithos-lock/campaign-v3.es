@@ -1,10 +1,13 @@
 {
-  // MewLock campaign, contract v4: lock asset A, earn asset B. One singleton
-  // box per campaign. v4 requires every other input to be a plain wallet (P2PK)
-  // box, so no other contract spent alongside a sweep, lock or top-up can count
-  // this campaign's outputs as its own payment (a Mart listing of the fee
-  // address, say, "paid" by the sweep output). v3 (Season 1) is campaign-v3.es,
-  // v2 (the mainnet test) is campaign-v2.es.
+  // CONTRACT v3, AS DEPLOYED (2026-10-01: Lithos Lock Season 1). Kept so pinned v3
+  // deployments still recompile byte for byte; never edit its code. campaign.es (v4)
+  // supersedes it: a v3 sweep can be spent together with another contract's box that
+  // pays the same fee address, which then counts the sweep output as its own payment.
+  //
+  // MewLock campaign, contract v3: lock asset A, earn asset B. One singleton
+  // box per campaign. (v2, the deployed test contract, is campaign-v2.es; v3
+  // pins the sweep to INPUTS(0) and lets a lock take a zero reward when B is
+  // its own token.)
   //
   // A and B are each a token or ERG (an empty id means ERG), and may be the
   // same asset. Users lock A for one of a fixed set of lengths. At lock time the
@@ -57,15 +60,6 @@
   // (Named up front: the typer cannot type `if (a || b)` nested in arithmetic.)
   val rewardOwnToken = !(rewardIsErg || sameAsset)
 
-  // A P2PK ErgoTree is exactly 0x00 0x08 0xcd followed by a 33-byte public key.
-  val p2pkPrefix = fromBase16("0008cd")
-  val onlyWalletInputs = INPUTS.forall { (input: Box) =>
-    input.id == SELF.id || (
-      input.propositionBytes.size == 36 &&
-      input.propositionBytes.slice(0, 3) == p2pkPrefix
-    )
-  }
-
   val nft     = SELF.tokens(0)
   val markers = SELF.tokens(1)
   val out     = OUTPUTS(0)
@@ -92,7 +86,6 @@
       b.tokens.forall({ (t: (Coll[Byte], Long)) => t._1 != nft._1 && t._1 != markers._1 })
     })
     sigmaProp(
-      onlyWalletInputs &&
       SELF.id == INPUTS(0).id &&
       out.propositionBytes == _feeTree &&
       out.value >= SELF.value &&
@@ -122,7 +115,7 @@
     // unexpected type there would make the read throw.
     val isLock = outMarkers._2 == markers._2 - 1L
 
-    sigmaProp(onlyWalletInputs && keepsShape && (if (isLock) {
+    sigmaProp(keepsShape && (if (isLock) {
       // Lock: exactly one new position, in OUTPUTS(1).
       val pos       = OUTPUTS.getOrElse(1, SELF)
       val unlockAt  = pos.R5[Int].getOrElse(-1)

@@ -61,7 +61,8 @@ async function verifyPlain(entry) {
 
 const LITHOS_SOURCES = {
 	2: 'contracts/lithos-lock/campaign-v2.es',
-	3: 'contracts/lithos-lock/campaign.es'
+	3: 'contracts/lithos-lock/campaign-v3.es',
+	4: 'contracts/lithos-lock/campaign.es'
 };
 const assetBytes = (id) => SColl(SByte, id ? hex.decode(id) : new Uint8Array());
 
